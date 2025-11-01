@@ -2,15 +2,26 @@
 /* Navbar start from here */
 
 @media screen and (max-width: 678px) {
-   .navbar .nav-links {
+  .navbar .nav-links {
     display: none;
-   }
-   .navbar .hamburger{
+  }
+  .navbar .hamburger {
     display: block;
-   }
+  }
 }
 
-
-
 /* Navbar end here */
+
+/* Feature start here */
+#feature .feature-card-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+#feature .feature-card-wrapper .feature-card {
+  flex-direction: column;
+}
+#feature .feature-card-wrapper .feature-card .content {
+  text-align: center;
+}
+/* Feature end here */
 /* Mobile view responsive end here */

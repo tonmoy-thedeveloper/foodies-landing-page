@@ -105,52 +105,77 @@ header {
     color: #1d1d1f;
   }
 }
-
 .hero-img {
   position: relative;
 }
-.hero-img img {
-  position: absolute;
-  right: 10px;
-  z-index: 0;
-}
-.hero-image {
+.image-wrapper {
   position: relative;
 }
-.ratings {
+.image-wrapper img {
   position: absolute;
-  z-index: 10;
-  bottom: 45%;
-  left: 10px;
-  padding: 18px 20px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-radius: 30px;
+  right: 40px;
 }
-.ratings p {
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  padding: 18px 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rating-badge span,
+.review-badge span {
   font-size: 1rem;
   font-weight: 500;
   color: #1d1d1f;
   text-transform: capitalize;
 }
-.ratings .stars {
-  display: flex;
-  gap: 4px;
-  color: #06c167;
-}
-.review {
-  position: absolute;
-  top: 100px;
-  right: 30px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 20px;
-  background-color: wheat;
-  border: 1px solid black;
-}
 /* Hero area styles end here */
 
 /* Header styles end here */
+
+/* Feature section styles start from here */
+#feature {
+  padding: 60px 0;
+  border-top: 2px solid #70707055;
+  border-bottom: 2px solid #70707055;
+}
+.feature-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.feature-card > .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background: #f3fcf7;
+  border-radius: 12px;
+}
+.feature-card > .icon > i {
+  font-size: 1.5rem;
+  color: #06c167;
+}
+.feature-card > .content h4 {
+  font-size: 18px;
+  color: #1d1d1f;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.feature-card > .content h5 {
+  font-size: 14px;
+  color: #1d1d1f;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+/* Feature section styles end here */
